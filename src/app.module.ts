@@ -10,9 +10,7 @@ import { AuthModule } from './auth/auth.module';
     ConfigModule.forRoot({
       isGlobal: true,
     }),
-    MongooseModule.forRoot(
-      'mongodb+srv://touhidsaleem1:to-do@cluster0.wiut6ma.mongodb.net/',
-    ),
+    MongooseModule.forRoot('mongodb://localhost:27017/'),
     AuthModule,
   ],
   controllers: [AppController],
